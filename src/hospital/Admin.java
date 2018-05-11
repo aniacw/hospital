@@ -12,3 +12,6 @@ public class Admin extends User {
         System.out.println("ADMIN");
     }
 }
+//deleteUserAccount
+//editDoctorList
+//

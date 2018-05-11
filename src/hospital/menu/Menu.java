@@ -14,8 +14,8 @@ public class Menu extends SystemComponent {
     public Menu(String name, Menu... submenus) {
         this.name = name;
         this.parent = null;
-        this.submenus = new ArrayList<>();
-        for (Menu menu : submenus)
+        this.submenus = new ArrayList<>(); //?
+        for (Menu menu : submenus) //?
             addSubmenu(menu);
     }
 
@@ -47,21 +47,21 @@ public class Menu extends SystemComponent {
             throw new IllegalArgumentException("Menu already added");
 
         submenus.add(menu);
-        menu.parent = this;
+        menu.parent = this;//?
     }
 
     @Override
     public void setSystem(HospitalSystem system) {
         this.system = system;
         for (Menu menu : submenus)
-            menu.setSystem(system);
+            menu.setSystem(system);//?
     }
 
     public void run() {
         Menu current = this;
         while (current != null) {
             current.display();
-            current = current.process();
+            current = current.process();//?
         }
     }
 }

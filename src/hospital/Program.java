@@ -12,7 +12,7 @@ public class Program {
                     new Menu("Hospital System",
                             new LoginMenu());
 
-            system.setMainMenu(mainMenu);
+            system.setMainMenu(mainMenu);//?
 
             system.addUser(new User("name", "***"));
             system.addUser(new Admin("admin", "admin"));

@@ -49,6 +49,10 @@ public class User extends SystemComponent {
     @Override
     public void setSystem(HospitalSystem system) {
         this.system = system;
-        menu.setSystem(system);
+        menu.setSystem(system);//?
     }
 }
+//deleteAccount
+//bookAppointment
+//cancelAppointment
+

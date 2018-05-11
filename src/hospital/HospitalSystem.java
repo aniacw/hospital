@@ -30,12 +30,12 @@ public class HospitalSystem {
 
     public void addUser(User u) {
         users.add(u);
-        u.setSystem(this);
+        u.setSystem(this);//?
     }
 
     public void setMainMenu(Menu mainMenu) {
         this.mainMenu = mainMenu;
-        mainMenu.setSystem(this);
+        mainMenu.setSystem(this);//?
     }
 
     public User getLoggedUser() {
