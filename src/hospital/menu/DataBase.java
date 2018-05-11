@@ -15,10 +15,10 @@ public class DataBase extends SystemComponent {
     }
 
     private List<Doctor> doctorList = new ArrayList<>();
-        doctorList.add("Thomas", "Smith", 5, "dentist");
+        doctorList.add(Doctor doctor1 = new Doctor("Thomas", "Smith", 5, "dentist"));
 
     private List<Patient> patientsList = new ArrayList<>();
-    patientsList.add("Rachel", "Green", "leg injury", true);
+    patientsList.add(Patient patient1 = new Patient("Rachel", "Green", "leg injury", true));
 
 
 
