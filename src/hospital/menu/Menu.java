@@ -2,7 +2,6 @@ package hospital.menu;
 
 import hospital.HospitalSystem;
 import hospital.SystemComponent;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -40,7 +39,7 @@ public class Menu extends SystemComponent {
             return null;
     }
 
-    public void addSubmenu(Menu menu) throws IllegalArgumentException {
+    public void addSubmenu(Menu menu) throws IllegalArgumentException {//?
         if (menu == null)
             throw new IllegalArgumentException("Menu cannot be null");
         if (submenus.contains(menu))
@@ -61,7 +60,7 @@ public class Menu extends SystemComponent {
         Menu current = this;
         while (current != null) {
             current.display();
-            current = current.process();//?
+            current = current.process();// w ogole nie rozumiem tej metody
         }
     }
 }

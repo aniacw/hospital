@@ -9,4 +9,13 @@ public class Doctor extends Person {
         this.specialisation = specialisation;
         this.surgery = surgery;
     }
+
+    @Override
+    public String getLastName() {
+        return super.getLastName();
+    }
+
+    public String getSpecialisation() {
+        return specialisation;
+    }
 }

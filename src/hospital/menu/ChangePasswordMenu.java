@@ -14,7 +14,7 @@ public class ChangePasswordMenu extends Menu {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Old password: ");
         String oldPassword = scanner.next();
-        User loggedUser = system.getLoggedUser();
+        User loggedUser = system.getLoggedUser();//? system
         if (loggedUser.authenticate(oldPassword)){
             System.out.println("New password: ");
             String newPassword = scanner.next();

@@ -1,5 +1,6 @@
 package hospital;
 
+import hospital.menu.BookAppointmentMenu;
 import hospital.menu.ChangePasswordMenu;
 import hospital.menu.Menu;
 
@@ -10,23 +11,26 @@ public class User extends SystemComponent {
                             new ChangePasswordMenu(),
                             new Menu("change email")
                     ),
-                    new Menu("book visit")
+                    new BookAppointmentMenu()
             );
 
     private String login;
     private String password;
     private Menu menu;
+    private Person personalData;
 
     public User(String login, String password) {
         this.login = login;
         this.password = password;
         this.menu = DEFAULT_USER_MENU;
+        this.personalData = null;
     }
 
     public User(String login, String password, Menu menu) {
         this.login = login;
         this.password = password;
         this.menu = menu;
+        this.personalData = null;
     }
 
     public void showInterface() {
@@ -51,8 +55,16 @@ public class User extends SystemComponent {
         this.system = system;
         menu.setSystem(system);//?
     }
-}
-//deleteAccount
-//bookAppointment
-//cancelAppointment
 
+    public Person getPersonalData() {
+        return personalData;
+    }
+}
+//    Dodaj referencję na obiekt Person wewnątrz klasy User, która będzie inicjalizowana nowym obiektem (Person, Doctor albo Patient)
+//    kiedy użytkownik pierwszy raz się loguje. Tzn przy logowaniu mamy sprawdzać czy ta referencja jest nullem,
+//        a jeśli tak to odpalić interfejs pytający przynajmniej o dane osobowei typ konta i przypisać ją do
+//            obiektu usera który właśnie się loguje. Referencja ta powinna zostać też wrzucona do
+//                odpowiedniego kontenera w instancji klasy DataBase w systemie. Dzięki temu każdy użytkownik systemu ma
+//        przyporządkowany rekord z danymi osobowymi w bazie danych, a jeśli jest lekarzem lub pacjentem,
+//        to rekord ten jest po prostu instancją klasy pochodnej po Person (Patient albo Doctor).
+//
