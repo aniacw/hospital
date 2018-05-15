@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class Appointment {
 //dlaczego tu nie jest readDate
+    public static final DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy"); //dlaczego private static, dlaczego w tej klasie?
     private Date date;
     private Doctor doctor;
     private Patient patient;
@@ -32,8 +33,11 @@ public class Appointment {
 //        DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");
 //        Date date = dateFormat.parse(dateString);
 //    }
-
-
-
-
+    @Override
+    public String toString(){
+        return "Patient: " + patient.getFullName() +
+                "\nDoctor: " + doctor.getFullName() +
+                "\nSurgery: " + doctor.getSurgery() +
+                "\nDate: " + dateFormat.format(date);
+    }
 }

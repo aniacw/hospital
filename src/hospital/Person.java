@@ -20,4 +20,13 @@ public class Person {
     public String getFullName(){
         return name + " " + lastName;
     }
+
+    public final Patient asPatient(){
+        try{
+            return (Patient)this;
+        }
+        catch (ClassCastException e){
+            return null;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-package hospital.menu;
+package hospital;
 
 import hospital.*;
 

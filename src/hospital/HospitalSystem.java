@@ -1,6 +1,5 @@
 package hospital;
 
-import hospital.menu.DataBase;
 import hospital.menu.Menu;
 
 import java.util.ArrayList;

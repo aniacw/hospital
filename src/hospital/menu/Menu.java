@@ -2,6 +2,8 @@ package hospital.menu;
 
 import hospital.HospitalSystem;
 import hospital.SystemComponent;
+import hospital.menu.exception.MenuInitializationException;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,7 +12,7 @@ public class Menu extends SystemComponent {
     private String name;
     private ArrayList<Menu> submenus;
 
-    public Menu(String name, Menu... submenus) {
+    public Menu(String name, Menu... submenus) throws MenuInitializationException {
         this.name = name;
         this.parent = null;
         this.submenus = new ArrayList<>(); //?
@@ -29,6 +31,7 @@ public class Menu extends SystemComponent {
     }
 
     public Menu process() {
+        display();
         Scanner inputScanner = new Scanner(System.in);
         int choice = inputScanner.nextInt();
         if (choice == 0)
@@ -39,11 +42,11 @@ public class Menu extends SystemComponent {
             return null;
     }
 
-    public void addSubmenu(Menu menu) throws IllegalArgumentException {//?
+    public void addSubmenu(Menu menu) throws MenuInitializationException {//?
         if (menu == null)
-            throw new IllegalArgumentException("Menu cannot be null");
+            throw new MenuInitializationException("Menu cannot be null");
         if (submenus.contains(menu))
-            throw new IllegalArgumentException("Menu already added");
+            throw new MenuInitializationException("Menu already added");
 
         submenus.add(menu);
         menu.parent = this;//?
@@ -56,10 +59,9 @@ public class Menu extends SystemComponent {
             menu.setSystem(system);//?
     }
 
-    public void run() {
+    public final void run() {
         Menu current = this;
         while (current != null) {
-            current.display();
             current = current.process();// w ogole nie rozumiem tej metody
         }
     }

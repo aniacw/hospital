@@ -1,8 +1,7 @@
 package hospital;
 
-import hospital.menu.BookAppointmentMenu;
-import hospital.menu.ChangePasswordMenu;
-import hospital.menu.Menu;
+import com.sun.istack.internal.NotNull;
+import hospital.menu.*;
 
 public class User extends SystemComponent {
     private static final Menu DEFAULT_USER_MENU =
@@ -11,7 +10,9 @@ public class User extends SystemComponent {
                             new ChangePasswordMenu(),
                             new Menu("change email")
                     ),
-                    new BookAppointmentMenu()
+                    new BookAppointmentMenu(),
+                    new CheckAppointmentsMenu(),
+                    new SetPersonalDataMenu()
             );
 
     private String login;
@@ -58,6 +59,10 @@ public class User extends SystemComponent {
 
     public Person getPersonalData() {
         return personalData;
+    }
+
+    public void setPersonalData(@NotNull Person personalData){
+        this.personalData = personalData;
     }
 }
 //    Dodaj referencję na obiekt Person wewnątrz klasy User, która będzie inicjalizowana nowym obiektem (Person, Doctor albo Patient)

@@ -18,4 +18,8 @@ public class Doctor extends Person {
     public String getSpecialisation() {
         return specialisation;
     }
+
+    public int getSurgery() {
+        return surgery;
+    }
 }

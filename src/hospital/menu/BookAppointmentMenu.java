@@ -2,6 +2,9 @@ package hospital.menu;
 
 import hospital.Appointment;
 import hospital.Patient;
+import hospital.Person;
+import hospital.SystemComponent;
+import hospital.menu.exception.MenuInitializationException;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -11,18 +14,16 @@ import java.util.Scanner;
 
 public class BookAppointmentMenu extends Menu {
 
-    public BookAppointmentMenu(){
+    public BookAppointmentMenu() throws MenuInitializationException {
         super("Book appointment");
     }
-
-    private static final DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy"); //dlaczego private static, dlaczego w tej klasie?
 
     private Date readDate(Scanner scanner){
         Date date = null;
         while (date == null){
             try {
                 System.out.println("Please type the date");
-                date = dateFormat.parse(scanner.next());
+                date = Appointment.dateFormat.parse(scanner.next());
             } catch (ParseException e) {
                 date = null;
                 System.out.println("Invalid date format");
@@ -37,9 +38,23 @@ public class BookAppointmentMenu extends Menu {
         System.out.println("Please type the specialisation");
         String selectedSpecialization = scanner.next();
         Date selectedDate = readDate(scanner);
-        Appointment appointment = new Appointment(selectedDate, system.getDataBase().findDoctorBySpecialisation(selectedSpecialization),
-                (Patient)system.getLoggedUser().getPersonalData()); // co to jest
-        system.getDataBase().addAppointment(appointment);
+        try {
+            Patient patient = (Patient) system.getLoggedUser().getPersonalData();
+            if (patient == null){
+                System.out.println("DataBase error: Personal data not set");
+                return parent;
+            }
+            Appointment appointment =
+                    new Appointment(
+                            selectedDate,
+                            system.getDataBase().findDoctorBySpecialisation(selectedSpecialization),
+                            patient); // co to jest
+            system.getDataBase().addAppointment(appointment);
+            patient.addAppointment(appointment);
+        }
+        catch (ClassCastException e){
+            System.out.println("DataBase error: Current user is not a patient");
+        }
         return parent; //dlaczego
     }
 }

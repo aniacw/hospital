@@ -8,6 +8,6 @@ public class AddUserMenu extends Menu {
 
     @Override
     public Menu process() {
-
+        return parent;
     }
 }
