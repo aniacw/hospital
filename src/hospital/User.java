@@ -3,12 +3,14 @@ package hospital;
 import com.sun.istack.internal.NotNull;
 import hospital.menu.*;
 
+import java.security.Signature;
+
 public class User extends SystemComponent {
     private static final Menu DEFAULT_USER_MENU =
             new Menu("main",
                     new Menu("settings",
                             new ChangePasswordMenu(),
-                            new Menu("change email")
+                            new ChangeEmailMenu()
                     ),
                     new BookAppointmentMenu(),
                     new CheckAppointmentsMenu(),
@@ -19,12 +21,14 @@ public class User extends SystemComponent {
     private String password;
     private Menu menu;
     private Person personalData;
+    private String email;
 
     public User(String login, String password) {
         this.login = login;
         this.password = password;
         this.menu = DEFAULT_USER_MENU;
         this.personalData = null;
+        this.email = null;
     }
 
     public User(String login, String password, Menu menu) {
@@ -32,6 +36,7 @@ public class User extends SystemComponent {
         this.password = password;
         this.menu = menu;
         this.personalData = null;
+        this.email = null;
     }
 
     public void showInterface() {
@@ -65,5 +70,11 @@ public class User extends SystemComponent {
         this.personalData = personalData;
     }
 
+    public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
