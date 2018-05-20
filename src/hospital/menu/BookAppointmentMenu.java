@@ -51,6 +51,7 @@ public class BookAppointmentMenu extends Menu {
                             patient);
             system.getDataBase().addAppointment(appointment);
             patient.addAppointment(appointment);
+            patient.sendConfirmationEmail(appointment);
         }
         catch (ClassCastException e){
             System.out.println("DataBase error: Current user is not a patient");

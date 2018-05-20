@@ -28,4 +28,8 @@ public class Patient extends Person {
     public ArrayList<Appointment> getAppointments() {
         return appointments;
     }
+
+    public void sendConfirmationEmail(Appointment a){
+        System.out.println("Email to the patient sent");
+    }
 }
