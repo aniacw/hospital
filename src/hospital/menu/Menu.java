@@ -3,7 +3,6 @@ package hospital.menu;
 import hospital.HospitalSystem;
 import hospital.SystemComponent;
 import hospital.menu.exception.MenuInitializationException;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,7 +14,7 @@ public class Menu extends SystemComponent {
     public Menu(String name, Menu... submenus) throws MenuInitializationException {
         this.name = name;
         this.parent = null;
-        this.submenus = new ArrayList<>(); //?
+        this.submenus = new ArrayList<>();
         for (Menu menu : submenus) //?
             addSubmenu(menu);
     }

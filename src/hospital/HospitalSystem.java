@@ -36,6 +36,11 @@ public class HospitalSystem {
         u.setSystem(this);//?
     }
 
+    public void removeUser(User u){
+        users.remove(u);
+
+    }
+
     public void setMainMenu(Menu mainMenu) {
         this.mainMenu = mainMenu;
         mainMenu.setSystem(this);//?
@@ -47,5 +52,9 @@ public class HospitalSystem {
 
     public DataBase getDataBase() {
         return dataBase;
+    }
+
+    public ArrayList<User> getUsers() {
+        return users;
     }
 }

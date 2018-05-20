@@ -64,12 +64,6 @@ public class User extends SystemComponent {
     public void setPersonalData(@NotNull Person personalData){
         this.personalData = personalData;
     }
+
+
 }
-//    Dodaj referencję na obiekt Person wewnątrz klasy User, która będzie inicjalizowana nowym obiektem (Person, Doctor albo Patient)
-//    kiedy użytkownik pierwszy raz się loguje. Tzn przy logowaniu mamy sprawdzać czy ta referencja jest nullem,
-//        a jeśli tak to odpalić interfejs pytający przynajmniej o dane osobowei typ konta i przypisać ją do
-//            obiektu usera który właśnie się loguje. Referencja ta powinna zostać też wrzucona do
-//                odpowiedniego kontenera w instancji klasy DataBase w systemie. Dzięki temu każdy użytkownik systemu ma
-//        przyporządkowany rekord z danymi osobowymi w bazie danych, a jeśli jest lekarzem lub pacjentem,
-//        to rekord ten jest po prostu instancją klasy pochodnej po Person (Patient albo Doctor).
-//

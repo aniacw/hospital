@@ -106,8 +106,12 @@ public class DataBase extends SystemComponent {
                 return a;
         return null;
     }
+
+    public User findUserByFullName(String name, String lastName){
+        for (User u : system.getUsers()){
+            if (u.
+        }
+    }
+
+
 }
-//kontener z doktorami, kontener z pacjentami, kontener z chorobami, kontener z wizytami i metodami pozwalającymi na wyszukiwania:
-// pacjentów i doktorów po nazwisku, chroby po nazwie, wizyt po dacie i doktorze oraz wizyt po dacie i pacjencie.
-// Instancję tej klasy będziemy przechowywać w systemie, będzie stanowić główne miejsce składowania danych o szpitalu (ale nie o userach systemu)
-//Do tego powinna mieć możliwość dodawania tych rekordów, usuwania i wyszukiwania.

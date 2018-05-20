@@ -48,13 +48,13 @@ public class BookAppointmentMenu extends Menu {
                     new Appointment(
                             selectedDate,
                             system.getDataBase().findDoctorBySpecialisation(selectedSpecialization),
-                            patient); // co to jest
+                            patient);
             system.getDataBase().addAppointment(appointment);
             patient.addAppointment(appointment);
         }
         catch (ClassCastException e){
             System.out.println("DataBase error: Current user is not a patient");
         }
-        return parent; //dlaczego
+        return parent;
     }
 }

@@ -15,7 +15,6 @@ public class Patient extends Person {
         appointments=new ArrayList<>();
     }
 
-
     public Patient(String name, String lastName, List<Disease> diseases, boolean requiresSickLeave) {
         super(name, lastName);
         this.diseases = diseases;
