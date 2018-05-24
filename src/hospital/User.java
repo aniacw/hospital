@@ -3,8 +3,6 @@ package hospital;
 import com.sun.istack.internal.NotNull;
 import hospital.menu.*;
 
-import java.security.Signature;
-
 public class User extends SystemComponent {
     private static final Menu DEFAULT_USER_MENU =
             new Menu("main",
@@ -17,13 +15,16 @@ public class User extends SystemComponent {
                     new SetPersonalDataMenu()
             );
 
+    private static int lastID = 0;
+    private int id;
     private String login;
     private String password;
-    private Menu menu;
+    protected Menu menu;
     private Person personalData;
     private String email;
 
     public User(String login, String password) {
+        this.id=lastID++;
         this.login = login;
         this.password = password;
         this.menu = DEFAULT_USER_MENU;
@@ -32,6 +33,7 @@ public class User extends SystemComponent {
     }
 
     public User(String login, String password, Menu menu) {
+        this.id=lastID++;
         this.login = login;
         this.password = password;
         this.menu = menu;
@@ -76,5 +78,9 @@ public class User extends SystemComponent {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public boolean hasAdminRights(){
+        return false;
     }
 }

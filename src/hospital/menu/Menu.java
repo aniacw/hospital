@@ -26,7 +26,7 @@ public class Menu extends SystemComponent {
             System.out.println("(" + i + ") " + menu.name);
             ++i;
         }
-        System.out.println("(0) BACK");
+        System.out.println(parent == null ? "(0) EXIT" : "(0) BACK");
     }
 
     public Menu process() {

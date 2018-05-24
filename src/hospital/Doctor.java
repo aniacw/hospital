@@ -1,5 +1,10 @@
 package hospital;
 
+import javax.print.Doc;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
 public class Doctor extends Person {
     private int surgery;
     private String specialisation;
@@ -8,6 +13,9 @@ public class Doctor extends Person {
         super(name, lastName);
         this.specialisation = specialisation;
         this.surgery = surgery;
+    }
+
+    public Doctor(){
     }
 
     @Override
@@ -21,5 +29,24 @@ public class Doctor extends Person {
 
     public int getSurgery() {
         return surgery;
+    }
+
+
+    public void write(PrintWriter writer) throws IOException{
+        writer.print(getName());
+        writer.print('\n');
+        writer.print(getLastName());
+        writer.print('\n');
+        writer.print(specialisation);
+        writer.print('\n');
+        writer.print(surgery);
+        writer.print('\n');
+    }
+
+    public void read(Scanner scanner){
+
+        surgery = scanner.nextInt();
+        scanner.nextLine();
+        specialisation = scanner.nextLine();
     }
 }

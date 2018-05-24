@@ -1,12 +1,18 @@
 package hospital;
 
 public class Person {
+    private static int lastID = 0;
+    private int id;
     private String name;
     private String lastName;
 
     public Person(String name, String lastName) {
+        this.id = lastID++;
         this.name = name;
         this.lastName = lastName;
+    }
+
+    public Person() {
     }
 
     public String getLastName() {
