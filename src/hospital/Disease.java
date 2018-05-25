@@ -1,9 +1,6 @@
 package hospital;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
-import java.util.Scanner;
+import java.io.ObjectOutputStream;
 
 public class Disease implements Serializable {
     private static int lastID = 0;
@@ -25,21 +22,25 @@ public class Disease implements Serializable {
         return diseaseName;
     }
 
-    @Override
-    public void write(PrintWriter writer) throws IOException {
-        writer.print(id);
-        writer.print('\n');
-        writer.print(diseaseName);
-        writer.print('\n');
-        writer.print(description);
-        writer.print('\n');
+    public void writeObject(ObjectOutputStream writer){
+        writer.readO
     }
 
-    @Override
-    public void read(Scanner scanner) {
-        id = scanner.nextInt();
-        scanner.nextLine();
-        diseaseName = scanner.nextLine();
-        description = scanner.nextLine();
-    }
+//    @Override
+//    public void write(PrintWriter writer) throws IOException {
+//        writer.print(id);
+//        writer.print('\n');
+//        writer.print(diseaseName);
+//        writer.print('\n');
+//        writer.print(description);
+//        writer.print('\n');
+//    }
+//
+//    @Override
+//    public void read(Scanner scanner) {
+//        id = scanner.nextInt();
+//        scanner.nextLine();
+//        diseaseName = scanner.nextLine();
+//        description = scanner.nextLine();
+//    }
 }

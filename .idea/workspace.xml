@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cab556-6f57-4a7d-97eb-93998dced1fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hospital/Serializable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hospital/menu/AddDiseaseMenu.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hospital/menu/CustomMenu.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/hospital/menu/DisplayUsersMenu.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Admin.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Admin.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Appointment.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Appointment.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/DataBase.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/DataBase.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Disease.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Disease.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/HospitalSystem.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/HospitalSystem.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Patient.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Patient.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Person.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Person.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Program.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/Program.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/User.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/User.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/AddUserMenu.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/AddUserMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/BookAppointmentMenu.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/BookAppointmentMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/Menu.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/Menu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/RemoveUserMenu.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/RemoveUserMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/SetPersonalDataMenu.class" afterPath="$PROJECT_DIR$/out/production/HospitalDataBase/hospital/menu/SetPersonalDataMenu.class" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/Admin.java" afterPath="$PROJECT_DIR$/src/hospital/Admin.java" />
       <change beforePath="$PROJECT_DIR$/src/hospital/Appointment.java" afterPath="$PROJECT_DIR$/src/hospital/Appointment.java" />
       <change beforePath="$PROJECT_DIR$/src/hospital/DataBase.java" afterPath="$PROJECT_DIR$/src/hospital/DataBase.java" />
       <change beforePath="$PROJECT_DIR$/src/hospital/Disease.java" afterPath="$PROJECT_DIR$/src/hospital/Disease.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/Doctor.java" afterPath="$PROJECT_DIR$/src/hospital/Doctor.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/HospitalSystem.java" afterPath="$PROJECT_DIR$/src/hospital/HospitalSystem.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/Patient.java" afterPath="$PROJECT_DIR$/src/hospital/Patient.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/Person.java" afterPath="$PROJECT_DIR$/src/hospital/Person.java" />
       <change beforePath="$PROJECT_DIR$/src/hospital/Program.java" afterPath="$PROJECT_DIR$/src/hospital/Program.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/User.java" afterPath="$PROJECT_DIR$/src/hospital/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/menu/AddUserMenu.java" afterPath="$PROJECT_DIR$/src/hospital/menu/AddUserMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/menu/Menu.java" afterPath="$PROJECT_DIR$/src/hospital/menu/Menu.java" />
-      <change beforePath="$PROJECT_DIR$/src/hospital/menu/RemoveUserMenu.java" afterPath="$PROJECT_DIR$/src/hospital/menu/RemoveUserMenu.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,24 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Disease.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Disease.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hospital/Disease.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="260">
+              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Patient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Patient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/Patient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="600">
               <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,10 +48,12 @@
       <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="646">
+              <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1010#1084#0" expanded="false" />
+                <element signature="e#1248#1290#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,17 +62,21 @@
       <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="155" column="9" lean-forward="false" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="115" column="18" lean-forward="false" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
               <folding>
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#DataBase#0;class#DataBase#0" expanded="false" />
+                <element signature="method#removeDoctor#0;class#DataBase#0" expanded="false" />
+                <element signature="method#removePatient#0;class#DataBase#0" expanded="false" />
+                <element signature="method#removeDisease#0;class#DataBase#0" expanded="false" />
+                <element signature="method#removeAppointment#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findDoctorByName#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findPatientByName#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findDoctorBySpecialisation#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findDisease#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findAppointmentByDateDoctor#0;class#DataBase#0" expanded="false" />
+                <element signature="method#findAppointmentByDatePatient#0;class#DataBase#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -105,8 +85,8 @@
       <file leaf-file-name="Appointment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/Appointment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="776">
+              <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding>
                 <element signature="e#732#733#0" expanded="true" />
                 <element signature="e#766#767#0" expanded="true" />
@@ -118,7 +98,7 @@
       <file leaf-file-name="HospitalSystem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/HospitalSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="1896">
               <caret line="92" column="12" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
               <folding>
                 <element signature="e#947#948#0" expanded="true" />
@@ -138,7 +118,7 @@
       <file leaf-file-name="Doctor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hospital/Doctor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="336">
               <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,6 +140,16 @@
                 <element signature="e#480#481#0" expanded="true" />
                 <element signature="e#524#525#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -208,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/hospital/menu/AddUserMenu.java" />
         <option value="$PROJECT_DIR$/src/hospital/menu/RemoveUserMenu.java" />
         <option value="$PROJECT_DIR$/src/hospital/Serializable.java" />
-        <option value="$PROJECT_DIR$/src/hospital/Disease.java" />
         <option value="$PROJECT_DIR$/src/hospital/menu/AddDiseaseMenu.java" />
         <option value="$PROJECT_DIR$/src/hospital/User.java" />
         <option value="$PROJECT_DIR$/src/hospital/HospitalSystem.java" />
@@ -216,11 +205,12 @@
         <option value="$PROJECT_DIR$/src/hospital/menu/Menu.java" />
         <option value="$PROJECT_DIR$/src/hospital/Admin.java" />
         <option value="$PROJECT_DIR$/src/hospital/menu/CustomMenu.java" />
-        <option value="$PROJECT_DIR$/src/hospital/Program.java" />
-        <option value="$PROJECT_DIR$/src/hospital/Appointment.java" />
         <option value="$PROJECT_DIR$/src/hospital/Person.java" />
         <option value="$PROJECT_DIR$/src/hospital/Doctor.java" />
         <option value="$PROJECT_DIR$/src/hospital/Patient.java" />
+        <option value="$PROJECT_DIR$/src/hospital/Appointment.java" />
+        <option value="$PROJECT_DIR$/src/hospital/Program.java" />
+        <option value="$PROJECT_DIR$/src/hospital/Disease.java" />
         <option value="$PROJECT_DIR$/src/hospital/DataBase.java" />
       </list>
     </option>
@@ -255,6 +245,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,10 +286,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,12 +445,13 @@
       <workItem from="1526937323817" duration="8000" />
       <workItem from="1527001124667" duration="10347000" />
       <workItem from="1527102302652" duration="2852000" />
-      <workItem from="1527187043861" duration="4262000" />
+      <workItem from="1527187043861" duration="5127000" />
+      <workItem from="1527282335167" duration="2148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116159000" />
+    <option name="totallyTimeSpent" value="119172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -478,7 +469,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17643923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,13 +507,18 @@
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/hospital/DataBase.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa164.34145/Admin.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa164.33679/Admin.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa164.37811/Appointment.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa164.45505/DataBase.java" />
@@ -595,7 +591,7 @@
         <state relative-caret-position="216">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="1484" column="0" lean-forward="false" selection-start-line="1484" selection-start-column="0" selection-end-line="1484" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +647,7 @@
         <state relative-caret-position="408">
           <caret line="19" column="79" lean-forward="false" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -722,19 +717,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hospital/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hospital/HospitalSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="1896">
           <caret line="92" column="12" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
           <folding>
             <element signature="e#947#948#0" expanded="true" />
@@ -746,17 +731,6 @@
             <element signature="e#1439#1440#0" expanded="true" />
             <element signature="e#1467#1468#0" expanded="true" />
             <marker date="1527009378247" expanded="true" signature="1800:1986" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hospital/Appointment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -778,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hospital/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="336">
           <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -786,41 +760,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hospital/Patient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hospital/Appointment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+          <folding>
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hospital/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="155" column="9" lean-forward="false" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="115" column="18" lean-forward="false" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
           <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#DataBase#0;class#DataBase#0" expanded="false" />
+            <element signature="method#removeDoctor#0;class#DataBase#0" expanded="false" />
+            <element signature="method#removePatient#0;class#DataBase#0" expanded="false" />
+            <element signature="method#removeDisease#0;class#DataBase#0" expanded="false" />
+            <element signature="method#removeAppointment#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findDoctorByName#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findPatientByName#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findDoctorBySpecialisation#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findDisease#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findAppointmentByDateDoctor#0;class#DataBase#0" expanded="false" />
+            <element signature="method#findAppointmentByDatePatient#0;class#DataBase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hospital/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1084#0" expanded="false" />
+            <element signature="e#1248#1290#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hospital/Disease.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="260">
+          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hospital/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>

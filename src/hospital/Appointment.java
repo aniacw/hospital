@@ -65,7 +65,7 @@ public class Appointment {
     public void read(Scanner scanner) {
         id = scanner.nextInt();
         scanner.nextLine();
-        date = null;
+        date = scanner.nextLine();
         doctor =  scanner.nextLine();
         patient = scanner.nextLine();
     }

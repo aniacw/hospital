@@ -1,10 +1,9 @@
 package hospital;
 
-import hospital.*;
-
-import javax.print.Doc;
-import java.io.*;
-import java.text.DateFormat;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.*;
 
 public class DataBase extends SystemComponent implements Serializable {
@@ -20,7 +19,6 @@ public class DataBase extends SystemComponent implements Serializable {
         diseases = new ArrayList<>();
         appointments = new ArrayList<>();
     }
-
 
     public void addDoctor(Doctor doctor) {
         doctors.add(doctor);
@@ -104,57 +102,75 @@ public class DataBase extends SystemComponent implements Serializable {
         return null;
     }
 
-    @Override
-    public void write(PrintWriter writer) throws IOException {
-        writer.print(diseases.size());
-        writer.print('\n');
+    try{
+        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("db.bin"));
+
+    } catch (IOException | FileNotFoundException e){
+        e.printStackTrace();
+    }
+
+
+    public void writeObject(ObjectOutputStream obj) throws IOException {
+        obj.readObject(diseases.size());
+        obj.readObject('\n');
         for (Disease d : diseases)
-            d.write(writer);
+            d.writeObject(obj);
 
-        writer.print(doctors.size());
-        writer.print('\n');
-        for (Doctor doc : doctors)
-            doc.write(writer);
 
-        writer.print(patients.size());
-        writer.print('\n');
-        for (Patient p : patients)
-            p.write(writer);
-
-        writer.print(appointments.size());
-        writer.print('\n');
-        for (Appointment a : appointments)
-            a.write(writer);
     }
 
 
-    @Override
-    public void read(Scanner scanner) {
-        int size = scanner.nextInt();
-        scanner.nextLine();
-        for (int i = 0; i < size; ++i) {
-            Disease d = new Disease();
-            d.read(scanner);
-            diseases.add(d);
-        }
-        for (int s = 0; s <size; s++) {
-            Appointment a = new Appointment();
-            a.read(scanner);
-            appointments.add(a);
-        }
+//    @Override
+//    public void write(PrintWriter writer) throws IOException {
+//        writer.print(diseases.size());
+//        writer.print('\n');
+//        for (Disease d : diseases)
+//            d.write(writer);
+//
+//        writer.print(doctors.size());
+//        writer.print('\n');
+//        for (Doctor doc : doctors)
+//            doc.write(writer);
+//
+//        writer.print(patients.size());
+//        writer.print('\n');
+//        for (Patient p : patients)
+//            p.write(writer);
+//
+//        writer.print(appointments.size());
+//        writer.print('\n');
+//        for (Appointment a : appointments)
+//            a.write(writer);
+//    }
+//
 
-        for (int e = 0; e < size; e++){
-            Doctor d = new Doctor();
-            d.read(scanner);
-            doctors.add(d);
-        }
-
-        for (int o = 0; o < size; o++) {
-            Patient p = new Patient();
-            p.read(scanner);
-            patients.add(p);
-        }
-    }
+//    @Override
+//    public void read(Scanner scanner) {
+//        int size = scanner.nextInt();
+//        scanner.nextLine();
+//        for (int i = 0; i < size; ++i) {
+//            Disease d = new Disease();
+//            d.read(scanner);
+//            diseases.add(d);
+//        }
+//        for (int s = 0; s <size; s++) {
+//            Appointment a = new Appointment();
+//            a.read(scanner);
+//            appointments.add(a);
+//        }
+//
+//        for (int e = 0; e < size; e++){
+//            Doctor d = new Doctor();
+//            d.read(scanner);
+//            doctors.add(d);
+//        }
+//
+//        for (int o = 0; o < size; o++) {
+//            Patient p = new Patient();
+//            p.read(scanner);
+//            patients.add(p);
+//        }
+//    }
 
 
 }

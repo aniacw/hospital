@@ -3,6 +3,11 @@ package hospital;
 import hospital.menu.LoginMenu;
 import hospital.menu.Menu;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 public class Program {
     public static void main(String[] args) {
         try {
@@ -30,9 +35,16 @@ public class Program {
 
             system.run();
 
+//            system.saveToFile("db.txt");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
-            system.saveToFile("db.txt");
-        } catch (Exception e) {
+        try{
+            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("db.bin"));
+            out.writeObject();
+
+        } catch (IOException e){
             e.printStackTrace();
         }
     }
