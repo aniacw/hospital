@@ -3,49 +3,39 @@ package hospital;
 import hospital.menu.LoginMenu;
 import hospital.menu.Menu;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 
 public class Program {
     public static void main(String[] args) {
-        try {
-            HospitalSystem system = new HospitalSystem();
-            system.loadFromFile("db.txt");
+        HospitalSystem system = new HospitalSystem();
+        system.loadFromFile();
+        // system.loadFromFile("db.bin");
 
-            Menu mainMenu =
-                    new Menu("Hospital System",
-                            new LoginMenu());
+        Menu mainMenu =
+                new Menu("Hospital System",
+                        new LoginMenu());
 
-            system.setMainMenu(mainMenu);//?
+        system.setMainMenu(mainMenu);//?
 
-            system.addUser(new User("name", "***"));
-            system.addUser(new User("login", "pass"));
-            system.addUser(new Admin("admin", "admin"));
+        system.addUser(new User("name", "***"));
+        system.addUser(new User("login", "pass"));
+        system.addUser(new Admin("admin", "admin"));
 
-            DataBase db = system.getDataBase();
-            db.addDoctor(new Doctor("Albert", "Kowalsky", 80, "chirurg"));
-            db.addDoctor(new Doctor("Katarzyna", "Zielinska", 86, "chirurg"));
-            db.addDoctor(new Doctor("Marian","Bauer", 999, "kardiolog"));
+        DataBase db = system.getDataBase();
+        db.addDoctor(new Doctor("Albert", "Kowalsky", 80, "chirurg"));
+        db.addDoctor(new Doctor("Katarzyna", "Zielinska", 86, "chirurg"));
+        db.addDoctor(new Doctor("Marian", "Bauer", 999, "kardiolog"));
 
-//            db.addDisease(new Disease("przeziebienie", "katar kaszel"));
-//            db.addDisease(new Disease("ospa", "wysypka"));
-//            db.addDisease(new Disease("zatrucie", "bigunka, gorczka"));
+//        db.addDisease(new Disease("przeziebienie", "katar kaszel"));
+//        db.addDisease(new Disease("ospa", "wysypka"));
+//        db.addDisease(new Disease("zatrucie", "bigunka, gorczka"));
+        //system.saveToFile();
+        system.run();
 
-            system.run();
-
-//            system.saveToFile("db.txt");
+//            system.saveToFile("db.bin");
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
 
-        try{
-            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("db.bin"));
-            out.writeObject();
-
-        } catch (IOException e){
-            e.printStackTrace();
-        }
     }
 }

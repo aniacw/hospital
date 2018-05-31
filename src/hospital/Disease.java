@@ -1,6 +1,7 @@
 package hospital;
 
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 public class Disease implements Serializable {
     private static int lastID = 0;
@@ -22,9 +23,6 @@ public class Disease implements Serializable {
         return diseaseName;
     }
 
-    public void writeObject(ObjectOutputStream writer){
-        writer.readO
-    }
 
 //    @Override
 //    public void write(PrintWriter writer) throws IOException {

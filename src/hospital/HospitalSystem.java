@@ -4,10 +4,10 @@ import hospital.menu.Menu;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.ListIterator;
-import java.util.Scanner;
 
 public class HospitalSystem {
+    private static final String DATABASE_FILENAME = "db.bin";
+
     private ArrayList<User> users;
     private User loggedUser;
     private Menu mainMenu;
@@ -88,23 +88,25 @@ public class HospitalSystem {
         return users.removeIf(u->u.getLogin().equals(login));
     }
 
-    public void saveToFile(String filename){
+    public void saveToFile(){
         try {
-            PrintWriter writer = new PrintWriter(filename);
-            dataBase.write(writer);
-            writer.close();
+            FileOutputStream out = new FileOutputStream(DATABASE_FILENAME);
+            dataBase.write(out);
+            out.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void loadFromFile(String filename){
+    public void loadFromFile(){
         try {
-            Scanner scanner = new Scanner(new FileInputStream(filename));
-            if (!scanner.hasNext())
-                return;
-            dataBase.read(scanner);
+            FileInputStream in = new FileInputStream(DATABASE_FILENAME);
+            dataBase.read(in);
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

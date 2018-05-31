@@ -2,12 +2,13 @@ package hospital;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Appointment {
+public class Appointment implements Serializable{
 //dlaczego tu nie jest readDate
     public static final DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy"); //dlaczego private static, dlaczego w tej klasie?
     private static int lastID = 0;
@@ -51,22 +52,22 @@ public class Appointment {
                 "\nDate: " + dateFormat.format(date);
     }
 
-    public void write(PrintWriter writer) throws IOException {
-        writer.print(id);
-        writer.print('\n');
-        writer.print(date);
-        writer.print('\n');
-        writer.print(doctor);
-        writer.print('\n');
-        writer.print(patient);
-        writer.print('\n');
-    }
-
-    public void read(Scanner scanner) {
-        id = scanner.nextInt();
-        scanner.nextLine();
-        date = scanner.nextLine();
-        doctor =  scanner.nextLine();
-        patient = scanner.nextLine();
-    }
+//    public void write(PrintWriter writer) throws IOException {
+//        writer.print(id);
+//        writer.print('\n');
+//        writer.print(date);
+//        writer.print('\n');
+//        writer.print(doctor);
+//        writer.print('\n');
+//        writer.print(patient);
+//        writer.print('\n');
+//    }
+//
+//    public void read(Scanner scanner) {
+//        id = scanner.nextInt();
+//        scanner.nextLine();
+//        date = scanner.nextLine();
+//        doctor =  scanner.nextLine();
+//        patient = scanner.nextLine();
+//    }
 }

@@ -53,13 +53,13 @@ public class Patient extends Person {
         writer.print('\n');
     }
 
-    public void read(Scanner scanner){
-
-            disease = scanner.nextLine();
-
-        requiresSickLeave = scanner.nextLine();
-        appointments =
-        ;
-
-    }
+//    public void read(Scanner scanner){
+//
+//            disease = scanner.nextLine();
+//
+//        requiresSickLeave = scanner.nextLine();
+//        appointments =
+//        ;
+//
+//    }
 }

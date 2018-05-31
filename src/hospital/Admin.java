@@ -2,9 +2,6 @@ package hospital;
 
 import hospital.menu.*;
 
-import java.lang.System;
-import java.util.function.Consumer;
-
 public class Admin extends User {
     private static final Menu ADMIN_MENU =
             new Menu("admin menu",

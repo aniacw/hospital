@@ -1,6 +1,8 @@
 package hospital;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
     private static int lastID = 0;
     private int id;
     private String name;

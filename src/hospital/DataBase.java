@@ -1,12 +1,9 @@
 package hospital;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.*;
 
-public class DataBase extends SystemComponent implements Serializable {
+public class DataBase extends SystemComponent {
 
     private List<Doctor> doctors;
     private List<Patient> patients;
@@ -102,22 +99,46 @@ public class DataBase extends SystemComponent implements Serializable {
         return null;
     }
 
-    try{
-        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("db.bin"));
+    public void write(OutputStream outputStream) throws IOException {
+        ObjectOutputStream out = new ObjectOutputStream(outputStream);
+        for (Disease d :diseases)
+            out.writeObject(d);
 
-    } catch (IOException | FileNotFoundException e){
-        e.printStackTrace();
-    }
-
-
-    public void writeObject(ObjectOutputStream obj) throws IOException {
-        obj.readObject(diseases.size());
-        obj.readObject('\n');
-        for (Disease d : diseases)
-            d.writeObject(obj);
-
+//        for (Doctor d : doctors)
+//            out.writeObject(d);
 
     }
+
+    public void read(InputStream inputStream) throws IOException, ClassNotFoundException {
+        ObjectInputStream in = new ObjectInputStream(inputStream);
+        Disease d;
+        try {
+            while (true) {
+                d = (Disease) in.readObject();
+                diseases.add(d);
+            }
+        }
+        catch (EOFException e){
+
+        }
+    }
+
+//    try{
+//        ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("db.bin"));
+//
+//    } catch (IOException | FileNotFoundException e){
+//        e.printStackTrace();
+//    }
+//
+//
+//    public void writeObject(ObjectOutputStream obj) throws IOException {
+//        obj.readObject(diseases.size());
+//        obj.readObject('\n');
+//        for (Disease d : diseases)
+//            d.writeObject(obj);
+//
+//
+//    }
 
 
 //    @Override
@@ -143,7 +164,7 @@ public class DataBase extends SystemComponent implements Serializable {
 //            a.write(writer);
 //    }
 //
-
+//
 //    @Override
 //    public void read(Scanner scanner) {
 //        int size = scanner.nextInt();
