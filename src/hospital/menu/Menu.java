@@ -19,6 +19,10 @@ public class Menu extends SystemComponent {
             addSubmenu(menu);
     }
 
+    boolean validChoice(int choice){
+        return choice <= submenus.size() && choice >= 0;
+    }
+
     public void display() {
         System.out.println(name);
         int i = 1;
@@ -29,10 +33,19 @@ public class Menu extends SystemComponent {
         System.out.println(parent == null ? "(0) EXIT" : "(0) BACK");
     }
 
-    public Menu process() {
-        display();
+    int getChoice(){
         Scanner inputScanner = new Scanner(System.in);
         int choice = inputScanner.nextInt();
+        while (!validChoice(choice)){
+            System.out.println("Invalid input");
+            choice = inputScanner.nextInt();
+        }
+        return choice;
+    }
+
+    public Menu process() {
+        display();
+        int choice = getChoice();
         if (choice == 0)
             return parent;
         if (choice - 1 < submenus.size())

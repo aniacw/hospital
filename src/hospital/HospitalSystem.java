@@ -67,18 +67,6 @@ public class HospitalSystem {
         return users;
     }
 
-//    public class Condition{
-//        private String login;
-//
-//        public Condition(String login) {
-//            this.login = login;
-//        }
-//
-//        public boolean invoke(User u){
-//            return u.getLogin().equals(login);
-//        }
-//    }
-
     public boolean removeUserByLogin(String login){
 //        for (ListIterator<User> i = users.listIterator(); i.hasNext(); ){
 //            User u = i.next();
